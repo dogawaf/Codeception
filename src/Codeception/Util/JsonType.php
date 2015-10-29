@@ -128,7 +128,7 @@ class JsonType
                 $expectedType = trim(strtolower(array_shift($filters)));
 
                 if ($expectedType != $currentType) {
-                    break;
+                    continue;
                 }
                 if (empty($filters)) {
                     $matched = true;
